@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Murach</title>
+</head>
+<body>
+<form action="home" method="post">
+    <img src="./assets/images/1.png" alt="">
+    <input type="hidden" name="action" value="add">
+
+    <h1>Survey</h1>
+    <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+    <div  class="infor">
+        <h2>Your information</h2>
+        <label>First Name</label>
+        <input type="text" name="firstName" ><br>
+        <label>Last Name</label>
+        <input type="text" name="lastName" ><br>
+        <label>Email</label>
+        <input type="email" name="email" ><br>
+        <label>Date of Birth</label>
+        <input type="date" name="dateOfBirth" ><br>
+    </div>
+
+    <h2>How did you hear about us</h2>
+    <div class="about-us">
+        <div class="list-item">
+            <div class="item">
+                <input type="radio" name="answer" value="Search engine" ><br>
+                <label>Search engine</label>
+            </div>
+            <div class="item">
+                <input type="radio" name="answer" value="Word of mouth" ><br>
+                <label>Word of mouth</label>
+            </div>
+            <div class="item">
+                <input type="radio" name="answer" value="Social media" ><br>
+                <label>Social media</label>
+            </div>
+            <div class="item">
+                <input type="radio" name="answer" value="Other" ><br>
+                <label>Other</label>
+            </div>
+        </div>
+    </div>
+    <h2>Would you like to receive announcements about new CDs and offers? </h2>
+    <div class="announcement">
+        <div class="check">
+            <input type="checkbox" name="announcement" value="YES, I'd like that"><br>
+            <label  class="check__desc">YES, I'd like that</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" name="announcement" value="YES, please send me email announcements"><br>
+            <label  class="check__desc">YES, please send me email announcements</label>
+        </div>
+    </div>
+
+    <div class="contact">
+        Please contact me by:<br>
+        <select name="contact">
+            <option value="Email" selected>Email</option>
+            <option value="Postal mail">Postal mail</option>
+        </select>
+    </div>
+
+    <input type="submit" value="Join now" id="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/*
+    Created on : Aug 28, 2024, 10:31:29 AM
+    Author     : PC
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+p {
+    width: 450px;
+}
+h1,h2 {
+    color: teal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h2{
+    width: 470px;
+}
+.list-item{
+    display: flex;
+gap:0.05em;
+}
+.item{
+    display: flex;
+    gap:0.1em;
+}
+
+.list-item label{
+    float:right;
+    width: 7em;
+    margin-top: 1em;
+}
+
+label {
+    float: left;
+    width: 6em;
+    margin-bottom: 0.5em;
+}
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+br {
+    clear: both;
+}
+#submit {
+    margin-top: 15px;
+
+}
+
+.announcement{
+    display: flex;
+    flex-flow:column ;
+}
+
+.check{
+    display: flex;
+    gap:2px;
+}
+
+.check__desc{
+    float: right;
+    white-space: nowrap;
+    margin-top: 15px;
+
+}
+.contact{
+    display: flex;
+    gap: 2px;
+    margin-top: 15px;
+}
