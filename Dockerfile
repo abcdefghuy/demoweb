@@ -1,12 +1,11 @@
-FROM maven:3.9.5-openjdk-21 As build
-COPY . .
-RUN mvn clean package -DskipTests
+# Sử dụng Tomcat 10.1.28 với JDK 21.0.1
+FROM tomcat:10.1.28-jdk21
 
-From  openjdk:24-jdk-slim
+# Sao chép ứng dụng WAR vào thư mục webapps của Tomcat
+COPY .target/demo2-1.0-SNAPSHOT.war C:/apache-tomcat-10.1.28/webapps
 
-Copy  --from=build  /target/demo2-1.0-SNAPSHOT.war demo2.war
+# Mở cổng 8080
+EXPOSE 8080
 
-
-Expose 8080
-
-Entrypoint["java", "-war","demo2.war"]
+# Lệnh để chạy Tomcat
+CMD ["catalina.sh", "run"]
