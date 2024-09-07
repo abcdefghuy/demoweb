@@ -1,5 +1,8 @@
 FROM tomcat:10.1.28
-VOLUME /tmp
-COPY target/*.jar app.jar
-ENTRYPOINT ["java","jar","/app.jar"]
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+COPY *.war /usr/local/tomcat/webapps
+
 EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
