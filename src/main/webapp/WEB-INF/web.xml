@@ -5,7 +5,7 @@
          version="6.0">
     <servlet>
         <servlet-name>HomeController</servlet-name>
-        <servlet-class>Controller.home.HomeController</servlet-class>
+        <servlet-class>Controller.Home.HomeController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>

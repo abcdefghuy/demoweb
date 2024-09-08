@@ -1,4 +1,4 @@
-package Controller.User;
+package Model.User;
 
 import java.time.LocalDate;
 import java.util.Date;
